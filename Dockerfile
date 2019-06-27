@@ -18,10 +18,11 @@ RUN conda update -y conda &&\
     conda update -y conda-build
 
 # Install cooltools environment
-RUN conda env create -f /home/install/cooltools.yml &&\
-    source ~/.bashrc &&\
+RUN conda env create -f /home/install/cooltools.yml 
+    #&&\
+    #source ~/.bashrc &&\
     #conda init bash &&\
-    conda activate cooltools
+    #conda activate cooltools
 # Install bioframe, cooltools and pairlib
 
 #RUN 
