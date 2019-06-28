@@ -19,6 +19,15 @@ RUN conda update -y conda &&\
 
 # Install cooltools environment
 RUN conda env create -f /home/install/cooltools.yml 
+# Install git and gcc
+RUN apt-get install -y git &&\
+    apt-get install -y gcc g++
+# Install bioframe, cooltools and pairlib
+RUN source activate cooltools &&\
+    pip install git+git://github.com/mirnylab/bioframe@master &&\
+    pip install git+git://github.com/mirnylab/cooltools@master &&\
+    pip install git+git://github.com/mirnylab/pairlib@master
+
     #&&\
     #source ~/.bashrc &&\
     #conda init bash &&\
