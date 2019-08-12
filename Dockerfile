@@ -24,9 +24,9 @@ RUN apt-get install -y git &&\
     apt-get install -y gcc g++
 # Install bioframe, cooltools and pairlib
 RUN source activate cooltools &&\
-    pip install git+git://github.com/mirnylab/bioframe@master &&\
-    pip install git+git://github.com/mirnylab/cooltools@master &&\
-    pip install git+git://github.com/mirnylab/pairlib@master
+    pip install git+git://github.com/mirnylab/bioframe@master/tree/40ca346 &&\
+    pip install git+git://github.com/mirnylab/cooltools@master/tree/26b8853 &&\
+    pip install git+git://github.com/mirnylab/pairlib@master/tree/663eeb5
 
     #&&\
     #source ~/.bashrc &&\
