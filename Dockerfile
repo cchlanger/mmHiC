@@ -12,8 +12,8 @@ RUN apt-get update -y &&\
 # Install Anaconda
 SHELL ["/bin/bash", "-c"]
 RUN wget -q https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh &&\
-    bash Anaconda3-2019.03-Linux-x86_64.sh -b -p /root/anaconda3
-ENV PATH="/root/anaconda3/bin:${PATH}"
+    bash Anaconda3-2019.03-Linux-x86_64.sh -b -p /home/anaconda3
+ENV PATH="/home/anaconda3/bin:${PATH}"
 RUN conda update -y conda &&\
     conda update -y conda-build
 
