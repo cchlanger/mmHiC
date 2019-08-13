@@ -27,11 +27,3 @@ RUN source activate cooltools &&\
     pip install git+git://github.com/mirnylab/bioframe@40ca346f8726cf809a16fca4df21298f7c096dc3 &&\
     pip install git+git://github.com/mirnylab/cooltools@26b885356e5fd81dd6f34ef688edc45a020ca9d0 &&\
     pip install git+git://github.com/mirnylab/pairlib@663eeb52405677dfd3117e79a1b31b7308b4bd70
-
-    #&&\
-    #source ~/.bashrc &&\
-    #conda init bash &&\
-    #conda activate cooltools
-# Install bioframe, cooltools and pairlib
-
-#RUN 

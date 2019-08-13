@@ -13,7 +13,7 @@ dependencies:
   - blas
   - bokeh
   - bzip2
-  - ca-certificates=2019.3.9
+  - ca-certificates
   - certifi
   - cffi
   - chardet
@@ -119,6 +119,7 @@ dependencies:
   - scikit-learn
   - scipy
   - setuptools
+  - seaborn
   - sip
   - six
   - sortedcontainers
