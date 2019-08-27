@@ -99,6 +99,8 @@ dependencies:
   - psutil
   - pthread-stubs
   - py
+  - pybedtools
+  - pybigwig
   - pycparser
   - pyfaidx
   - pyopenssl
@@ -116,6 +118,7 @@ dependencies:
   - reportlab
   - requests
   - samtools
+  - statsmodels
   - scikit-learn
   - scipy
   - setuptools
