@@ -4,140 +4,39 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - asciitree
-  - asn1crypto
-  - atomicwrites
-  - attrs
-  - bcftools
-  - biopython
-  - blas
-  - bokeh
-  - bzip2
-  - ca-certificates
-  - certifi
-  - cffi
-  - chardet
-  - click
-  - cloudpickle
+  # user required tools:
   - cooler
-  - coreutils
-  - cryptography
-  - curl
-  - cycler
-  - cython
-  - cytoolz
-  - dask
-  - dask-core
-  - dbus
-  - dill
-  - distributed
-  - expat
-  - fontconfig
-  - freetype
-  - gettext
-  - glib
-  - gst-plugins-base
-  - gstreamer
-  - h5py
-  - hdf5
-  - heapdict
-  - htslib
-  - icu
-  - idna
-  - importlib_metadata
-  - jinja2
-  - joblib
-  - jpeg
-  - kiwisolver
-  - krb5
-  - libblas
-  - libcblas
-  - libcurl
-  - libdeflate
-  - libedit
-  - libffi
-  - libgcc
-  - libgcc-ng
-  - libgfortran-ng
-  - libiconv
-  - liblapack
-  - libopenblas
-  - libpng
-  - libssh2
-  - libstdcxx-ng
-  - libtiff
-  - libuuid
-  - libxcb
-  - libxml2
-  - llvmlite
-  - locket
-  - lz4-c
-  - markupsafe
-  - matplotlib
-  - matplotlib-base
-  - mmtf-python
-  - more-itertools
-  - msgpack-python
-  - multiprocess
-  - ncurses
-  - numba
   - numpy
-  - numpy-base
-  - olefile
-  - openblas
-  - openssl
-  - packaging
-  - pairix
+  - matplotlib
+  - multiprocess
   - pairtools
   - pandas
-  - partd
-  - pbgzip
-  - pcre
-  - pillow
-  - pip
-  - pluggy
-  - psutil
-  - pthread-stubs
-  - py
-  - pycparser
-  - pyfaidx
-  - pyopenssl
-  - pyparsing
-  - pyqt
+  - pybedtools
+  - pybigwig
   - pysam
-  - pysocks
-  - pytest
-  - python
-  - python-dateutil
-  - pytz
-  - pyyaml
-  - qt
-  - readline
-  - reportlab
-  - requests
-  - samtools
   - scikit-learn
   - scipy
-  - setuptools
   - seaborn
-  - sip
+  - statsmodels
+  # requirements for pairlib: 
+  # - numpy
+  - cython
+  # requirements for bioframe:
+  # - pandas 
   - six
-  - sortedcontainers
-  - sqlite
-  - tabix
-  - tblib
-  - tk
-  - toolz
-  - tornado
-  - urllib3
-  - wcwidth
-  - wheel
-  - xorg-libxau
-  - xorg-libxdmcp
-  - xz
-  - yaml
-  - zict
-  - zipp
-  - zlib
-  - zstd
+  - requests 
+  - pairix
+  # requirements for cooltools:
+  # - numpy 
+  # - cython 
+  # - matplotlib 
+  # - pandas
+  # - scipy
+  # - cooler 
+  # - scikit-learn 
+  - h5py 
+  - numba 
+  - dask 
+  - click 
+  - pytest
 prefix: /home/clanger/anaconda3/envs/cooltools
