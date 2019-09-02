@@ -39,4 +39,6 @@ dependencies:
   - dask 
   - click 
   - pytest
+  # linting tools for vscode in container
+  - pylama
 prefix: /home/clanger/anaconda3/envs/cooltools
