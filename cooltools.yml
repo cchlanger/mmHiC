@@ -39,7 +39,6 @@ dependencies:
   - dask 
   - click 
   - pytest
-  # pacakges to facility development with vscode inside the container
+  # packages to facility development with vscode inside the container
   - pylama
-  - ssh
 prefix: /home/clanger/anaconda3/envs/cooltools

@@ -8,7 +8,8 @@ RUN apt-get update -y &&\
     apt-get install apt-utils -y &&\
     apt-get install -y wget &&\
     apt-get install -y unzip &&\
-    apt-get install -y bzip2
+    apt-get install -y bzip2 &&\
+    apt-get install ssh
 # Install Anaconda
 SHELL ["/bin/bash", "-c"]
 RUN wget -q https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh &&\
