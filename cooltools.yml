@@ -41,4 +41,5 @@ dependencies:
   - pytest
   # packages to facility development with vscode inside the container
   - pylama
+  - jupyter
 prefix: /home/clanger/anaconda3/envs/cooltools
