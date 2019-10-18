@@ -1,2 +1,2 @@
 # mmHiC
-Michael's Method HiC Pipeline
+Michael's Method HiC Container
