@@ -31,4 +31,4 @@ EXPOSE 8080
 
 WORKDIR /work
 
-CMD [ "jupyter", "lab", "--ip=0.0.0.0", "--port=8080", "--allow-root"]
+CMD [ "jupyter", "notebook", "--ip=0.0.0.0", "--port=8080", "--allow-root"]
