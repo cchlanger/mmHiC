@@ -18,6 +18,7 @@ dependencies:
   - scipy
   - seaborn
   - statsmodels
+  - jupyter
   # requirements for pairlib: 
   # - numpy
   - cython
