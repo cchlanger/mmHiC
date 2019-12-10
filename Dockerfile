@@ -1,7 +1,8 @@
 FROM docker.io/ubuntu:bionic
 ARG DEBIAN_FRONTEND=noninteractive
-WORKDIR /temp
-COPY . /temp/install/
+#Can not use /temp on our cluster
+WORKDIR /home
+COPY . /home/install/
 
 # Update and create base image
 RUN apt-get update -y &&\
@@ -18,7 +19,7 @@ RUN conda update -y conda &&\
     conda update -y conda-build
 
 # Install cooltools environment
-RUN conda env create -f /temp/install/cooltools.yml 
+RUN conda env create -f /home/install/cooltools.yml 
 
 # Install bioframe, cooltools and pairlib as well as our own NGS library
 RUN source activate cooltools &&\
@@ -26,5 +27,3 @@ RUN source activate cooltools &&\
     pip install git+git://github.com/mirnylab/cooltools@26b885356e5fd81dd6f34ef688edc45a020ca9d0 &&\
     pip install git+git://github.com/mirnylab/pairlib@663eeb52405677dfd3117e79a1b31b7308b4bd70 &&\
     pip install git+git://github.com/gerlichlab/NGS.git
-
-WORKDIR /home
