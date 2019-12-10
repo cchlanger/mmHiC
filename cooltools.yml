@@ -41,4 +41,8 @@ dependencies:
   - pytest
   # packages to facility development with vscode inside the container
   - pylama
+  # parquet support
+  - pyensembl
+  - pyarrow
+  - fastparquet
 prefix: /home/clanger/anaconda3/envs/cooltools
