@@ -45,4 +45,8 @@ dependencies:
   - pyensembl
   - pyarrow
   - fastparquet
+  # jupyter support
+  - ipywidgets
+  - ipykernel
+  - jupyterlab
 prefix: /home/clanger/anaconda3/envs/cooltools
