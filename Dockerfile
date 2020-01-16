@@ -3,6 +3,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 #Can not use /temp on our cluster
 WORKDIR /temp
 COPY . /temp/install/
+ENV LANG C.UTF-8  
+ENV LC_ALL C.UTF-8
 
 # Update and create base image
 RUN apt-get update -y &&\
